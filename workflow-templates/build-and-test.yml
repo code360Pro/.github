@@ -1,1 +1,13 @@
+name: buildandtest
+on:
+ workflow_call
 
+ jobs:
+  builds:
+   runs-on: ubuntu-latest
+
+   steps: Print Runner hostname and Ip address
+   run: |
+       echo "Runner Hostname : $(hostname)"
+       curl http://ipinfo.io/ip
+    
