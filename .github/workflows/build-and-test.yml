@@ -3,7 +3,7 @@ on:
  workflow_call
 
  jobs:
-  builds:
+  build:
    runs-on: ubuntu-latest
 
    steps: Print Runner hostname and Ip address
